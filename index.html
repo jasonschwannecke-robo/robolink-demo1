@@ -141,21 +141,21 @@
 
         <div id="splash-menu" style="display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;min-width:0;">
           <span style="display:block;width:100%;text-align:left;font-size:14px;font-weight:800;letter-spacing:0.03em;color:#1c1a17;margin-bottom:6px;">Choose A Demo</span>
+          <div class="tappable" onclick="showView('view-home-mvp')" style="width:100%;min-width:0;padding:16px;background:#ffffff;border:1px solid #ded7c8;border-radius:10px;text-align:left;">
+            <span style="display:block;font-size:15px;font-weight:600;">1. MVP</span>
+            <span style="display:block;font-size:12.5px;color:#746b5e;margin-top:2px;">Simplest case: one battery powering one load</span>
+          </div>
           <div class="tappable" onclick="goToSharedNormal()" style="width:100%;min-width:0;padding:16px;background:#ffffff;border:1px solid #ded7c8;border-radius:10px;text-align:left;">
-            <span style="display:block;font-size:15px;font-weight:600;">Pooled Battery</span>
+            <span style="display:block;font-size:15px;font-weight:600;">2. Pooled Battery</span>
             <span style="display:block;font-size:12.5px;color:#746b5e;margin-top:2px;">Two batteries detected on one bus, shown as a single pool</span>
           </div>
           <div class="tappable" onclick="goToSharedAlert()" style="width:100%;min-width:0;padding:16px;background:#ffffff;border:1px solid #f0c9c2;border-radius:10px;text-align:left;">
-            <span style="display:block;font-size:15px;font-weight:600;color:#b42318;">Pooled Battery Alert</span>
+            <span style="display:block;font-size:15px;font-weight:600;color:#b42318;">3. Pooled Battery Alert</span>
             <span style="display:block;font-size:12.5px;color:#746b5e;margin-top:2px;">Shared pool, jumping straight into the critical state and push notification</span>
           </div>
           <div class="tappable" onclick="showView('view-home-separate')" style="width:100%;min-width:0;padding:16px;background:#ffffff;border:1px solid #ded7c8;border-radius:10px;text-align:left;">
-            <span style="display:block;font-size:15px;font-weight:600;">Separate Batteries</span>
+            <span style="display:block;font-size:15px;font-weight:600;">4. Separate Batteries</span>
             <span style="display:block;font-size:12.5px;color:#746b5e;margin-top:2px;">Two independent systems, each with their own chargers and loads</span>
-          </div>
-          <div class="tappable" onclick="showView('view-home-mvp')" style="width:100%;min-width:0;padding:16px;background:#ffffff;border:1px solid #ded7c8;border-radius:10px;text-align:left;">
-            <span style="display:block;font-size:15px;font-weight:600;">MVP</span>
-            <span style="display:block;font-size:12.5px;color:#746b5e;margin-top:2px;">Simplest case: one battery powering one load</span>
           </div>
         </div>
       </div>
