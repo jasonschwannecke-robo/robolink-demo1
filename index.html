@@ -192,15 +192,16 @@
 
           <div class="tappable" onclick="togglePool()" style="padding:14px 4px;display:flex;align-items:center;gap:14px;border-bottom:1px solid #ded7c8;">
             <div style="position:relative;width:54px;height:27px;flex-shrink:0;">
-              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;">
+              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;overflow:visible;">
                 <rect x="1" y="1" width="26" height="14" rx="3" fill="none" stroke="#746b5e" stroke-width="1.6"/>
                 <rect x="28" y="5" width="3" height="6" rx="1" fill="#746b5e"/>
-                <rect id="pool-fill" x="2.5" y="2.5" width="23" height="11" rx="2" fill="#16a34a"/>
+                <rect id="pool-fill-remaining" x="2.5" y="2.5" width="16.56" height="11" fill="#16a34a"/>
+                <rect id="pool-fill-used" x="19.06" y="2.5" width="6.44" height="11" fill="#a89d87"/>
                 <g id="pool-bolt" transform="translate(14,1) scale(0.4) translate(-11,-12)">
                   <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="#ffffff" stroke="#1c1a17" stroke-width="1.2"/>
                 </g>
               </svg>
-              <span id="pool-pct" style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#ffffff;line-height:1;">72%</span>
+              <span id="pool-pct" style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#ffffff;line-height:1;">72</span>
             </div>
             <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;">
               <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
@@ -219,15 +220,16 @@
 
           <div id="battery-card-starting" style="padding:14px 4px;display:flex;align-items:center;gap:14px;border-bottom:1px solid #ded7c8;">
             <div style="position:relative;width:54px;height:27px;flex-shrink:0;">
-              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;">
+              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;overflow:visible;">
                 <rect x="1" y="1" width="26" height="14" rx="3" fill="none" stroke="#746b5e" stroke-width="1.6"/>
                 <rect x="28" y="5" width="3" height="6" rx="1" fill="#746b5e"/>
-                <rect id="house-battery-fill" x="2.5" y="2.5" width="23" height="11" rx="2" fill="#16a34a"/>
+                <rect id="house-battery-fill-remaining" x="2.5" y="2.5" width="19.55" height="11" fill="#16a34a"/>
+                <rect id="house-battery-fill-used" x="22.05" y="2.5" width="3.45" height="11" fill="#a89d87"/>
                 <g id="house-battery-bolt" transform="translate(14,1) scale(0.4) translate(-11,-12)">
                   <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="#ffffff" stroke="#1c1a17" stroke-width="1.2"/>
                 </g>
               </svg>
-              <span id="house-battery-pct" style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#ffffff;line-height:1;">85%</span>
+              <span id="house-battery-pct" style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#ffffff;line-height:1;">85</span>
             </div>
             <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;">
               <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
@@ -246,15 +248,16 @@
 
           <div style="padding:14px 4px;display:flex;align-items:center;gap:14px;border-bottom:1px solid #ded7c8;">
             <div style="position:relative;width:54px;height:27px;flex-shrink:0;">
-              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;">
+              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;overflow:visible;">
                 <rect x="1" y="1" width="26" height="14" rx="3" fill="none" stroke="#746b5e" stroke-width="1.6"/>
                 <rect x="28" y="5" width="3" height="6" rx="1" fill="#746b5e"/>
-                <rect id="aux-battery-fill" x="2.5" y="2.5" width="23" height="11" rx="2" fill="#16a34a"/>
+                <rect id="aux-battery-fill-remaining" x="2.5" y="2.5" width="14.26" height="11" fill="#16a34a"/>
+                <rect id="aux-battery-fill-used" x="16.76" y="2.5" width="8.74" height="11" fill="#a89d87"/>
                 <g id="aux-battery-bolt" transform="translate(14,1) scale(0.4) translate(-11,-12)">
                   <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="#ffffff" stroke="#1c1a17" stroke-width="1.2"/>
                 </g>
               </svg>
-              <span id="aux-battery-pct" style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#ffffff;line-height:1;">62%</span>
+              <span id="aux-battery-pct" style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#ffffff;line-height:1;">62</span>
             </div>
             <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;">
               <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
@@ -402,15 +405,16 @@
         <div style="display:flex;flex-direction:column;margin:0 20px;border-top:1px solid #ded7c8;">
           <div style="padding:14px 4px;display:flex;align-items:center;gap:14px;border-bottom:1px solid #ded7c8;">
             <div style="position:relative;width:54px;height:27px;flex-shrink:0;">
-              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;">
+              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;overflow:visible;">
                 <rect x="1" y="1" width="26" height="14" rx="3" fill="none" stroke="#746b5e" stroke-width="1.6"/>
                 <rect x="28" y="5" width="3" height="6" rx="1" fill="#746b5e"/>
-                <rect x="2.5" y="2.5" width="23" height="11" rx="2" fill="#16a34a"/>
+                <rect x="2.5" y="2.5" width="19.55" height="11" fill="#16a34a"/>
+                <rect x="22.05" y="2.5" width="3.45" height="11" fill="#a89d87"/>
                 <g transform="translate(14,1) scale(0.4) translate(-11,-12)">
                   <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="#ffffff" stroke="#1c1a17" stroke-width="1.2"/>
                 </g>
               </svg>
-              <span style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#ffffff;line-height:1;">85%</span>
+              <span style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#ffffff;line-height:1;">85</span>
             </div>
             <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;">
               <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
@@ -459,12 +463,13 @@
         <div style="display:flex;flex-direction:column;margin:0 20px;border-top:1px solid #ded7c8;">
           <div style="padding:14px 4px;display:flex;align-items:center;gap:14px;border-bottom:1px solid #ded7c8;">
             <div style="position:relative;width:54px;height:27px;flex-shrink:0;">
-              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;">
+              <svg viewBox="0 0 32 16" width="54" height="27" style="display:block;overflow:visible;">
                 <rect x="1" y="1" width="26" height="14" rx="3" fill="none" stroke="#746b5e" stroke-width="1.6"/>
                 <rect x="28" y="5" width="3" height="6" rx="1" fill="#746b5e"/>
-                <rect x="2.5" y="2.5" width="23" height="11" rx="2" fill="#16a34a"/>
+                <rect x="2.5" y="2.5" width="14.26" height="11" fill="#16a34a"/>
+                <rect x="16.76" y="2.5" width="8.74" height="11" fill="#a89d87"/>
               </svg>
-              <span style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#ffffff;line-height:1;">62%</span>
+              <span style="position:absolute;top:0;left:0;width:47px;height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#ffffff;line-height:1;">62</span>
             </div>
             <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;">
               <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
@@ -682,22 +687,28 @@
     clearTimeout(bannerTimeout);
   }
 
+  function setBatteryIcon(prefix, pct) {
+    var remaining = document.getElementById(prefix + '-fill-remaining');
+    var used = document.getElementById(prefix + '-fill-used');
+    var pctEl = document.getElementById(prefix + '-pct');
+    var innerX = 2.5, innerW = 23;
+    var greenW = innerW * (pct / 100);
+    remaining.setAttribute('width', greenW.toFixed(2));
+    used.setAttribute('x', (innerX + greenW).toFixed(2));
+    used.setAttribute('width', (innerW - greenW).toFixed(2));
+    pctEl.textContent = pct;
+  }
+
   function setMode(mode) {
     var isCritical = (mode === 'alert');
 
     var card = document.getElementById('battery-card-starting');
     var time = document.getElementById('starting-time-remaining');
     var message = document.getElementById('starting-time-message');
-    var houseFill = document.getElementById('house-battery-fill');
-    var housePct = document.getElementById('house-battery-pct');
     var houseBolt = document.getElementById('house-battery-bolt');
-    var auxFill = document.getElementById('aux-battery-fill');
-    var auxPct = document.getElementById('aux-battery-pct');
     var auxBolt = document.getElementById('aux-battery-bolt');
     var auxTime = document.getElementById('aux-time-remaining');
     var auxMessage = document.getElementById('aux-time-message');
-    var poolFill = document.getElementById('pool-fill');
-    var poolPct = document.getElementById('pool-pct');
     var poolBolt = document.getElementById('pool-bolt');
     var poolTime = document.getElementById('pool-time');
     var alternator = document.getElementById('alternator-status');
@@ -710,12 +721,10 @@
       message.style.color = '#b42318';
       message.style.fontWeight = '600';
 
-      houseFill.setAttribute('fill', '#a89d87');
-      housePct.textContent = '8%';
+      setBatteryIcon('house-battery', 8);
       houseBolt.style.display = 'none';
 
-      auxFill.setAttribute('fill', '#a89d87');
-      auxPct.textContent = '6%';
+      setBatteryIcon('aux-battery', 6);
       auxBolt.style.display = 'none';
       auxTime.textContent = '0h 15m';
       auxTime.style.color = '#b42318';
@@ -723,8 +732,7 @@
       auxMessage.style.color = '#b42318';
       auxMessage.style.fontWeight = '600';
 
-      poolFill.setAttribute('fill', '#a89d87');
-      poolPct.textContent = '7%';
+      setBatteryIcon('pool', 7);
       poolBolt.style.display = 'none';
       poolTime.textContent = '0h 18m';
       poolTime.style.color = '#b42318';
@@ -741,12 +749,10 @@
       message.style.color = '#a89d87';
       message.style.fontWeight = 'normal';
 
-      houseFill.setAttribute('fill', '#16a34a');
-      housePct.textContent = '85%';
+      setBatteryIcon('house-battery', 85);
       houseBolt.style.display = 'inline';
 
-      auxFill.setAttribute('fill', '#16a34a');
-      auxPct.textContent = '62%';
+      setBatteryIcon('aux-battery', 62);
       auxBolt.style.display = 'inline';
       auxTime.textContent = '5h 30m';
       auxTime.style.color = '#1c1a17';
@@ -754,8 +760,7 @@
       auxMessage.style.color = '#a89d87';
       auxMessage.style.fontWeight = 'normal';
 
-      poolFill.setAttribute('fill', '#16a34a');
-      poolPct.textContent = '72%';
+      setBatteryIcon('pool', 72);
       poolBolt.style.display = 'inline';
       poolTime.textContent = '8h 15m';
       poolTime.style.color = '#1c1a17';
