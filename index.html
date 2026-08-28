@@ -45,7 +45,7 @@
     font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 
-  .page { padding: 48px 40px 72px; }
+  .page { padding: 0; }
 
   .header { max-width: 720px; margin: 0 0 32px; display: flex; flex-direction: column; gap: 10px; }
   .eyebrow {
@@ -65,12 +65,11 @@
   }
 
   .phone-frame {
-    background: var(--frame-case); border-radius: 30px; padding: 10px;
-    box-shadow: 0 16px 40px -12px var(--shadow); width: fit-content;
+    background: none; padding: 0; box-shadow: none; width: 100%;
   }
   .phone-screen {
-    width: 390px; min-height: 720px; background: #faf8f4; color: #1c1a17;
-    border-radius: 22px; overflow: hidden;
+    width: 100%; min-height: 100vh; background: #faf8f4; color: #1c1a17;
+    border-radius: 0; overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     position: relative;
     display: flex; flex-direction: column;
@@ -100,26 +99,9 @@
     .spinner { animation: none; }
   }
 
-  @media (max-width: 480px) {
-    .page { padding: 0; }
-    .header, .proto-hint { display: none; }
-    .phone-frame { background: none; padding: 0; box-shadow: none; width: 100%; }
-    .phone-screen { width: 100%; border-radius: 0; min-height: 100vh; }
-  }
 </style>
 
 <div class="page">
-
-  <div class="header">
-    <span class="eyebrow">Robo Link &middot; Clarity Build</span>
-    <h1 class="title">Battery &amp; Light MVP</h1>
-    <p class="desc">One screen, mirroring the real system: Chargers feed the Batteries, Batteries feed the Loads. Time remaining now lives inside each battery's own card. Everything below is read-only for now &mdash; no actuation yet.</p>
-  </div>
-
-  <p class="proto-hint">
-    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9V6a3 3 0 0 1 6 0v6M9 9v6a3 3 0 0 0 6 0V9M9 9H6a3 3 0 0 0 0 6h1"/></svg>
-    Clickable &mdash; the splash screen is the demo picker. Choose "Pooled Battery," "Pooled Battery Alert" (jumps straight into the critical state), or "Separate Batteries," then tap "Demo Picker" at the top to return and try another. In Pooled Battery: tap "Battery" to expand into the two individual batteries, tap a pencil to rename one, and tap Alternator to reveal disconnected chargers &mdash; in the Alert version, both batteries and the alternator move together, since they're on one pool. In Separate Batteries, System 2 has no charger connected &mdash; tap that row to reveal the disconnected Shore Power and Solar Panel, same pattern as Pooled Battery.
-  </p>
 
   <div class="phone-frame">
     <div class="phone-screen" id="app-root">
